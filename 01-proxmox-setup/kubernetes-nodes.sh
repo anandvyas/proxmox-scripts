@@ -35,6 +35,7 @@ qm clone $TEMPLATE_ID 103 --name k8s-worker-gpu --full
 qm set 103 \
     --cores 6 \
     --memory 16384 \
+    --machine q35 \
     --ipconfig0 ip=192.168.1.33/24,gw=$GATEWAY \
     --ciuser ubuntu \
     --sshkeys ~/.ssh/id_rsa.pub
